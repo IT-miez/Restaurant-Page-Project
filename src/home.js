@@ -1,7 +1,7 @@
 
 
 import "./styles.css";
-
+import testImage from "../img/restaurant-pizza-background.jpg"
 
 console.log("Testi juttu")
 
@@ -70,7 +70,7 @@ export function createSite() {
         newHeader.classList.add("sub-header")
         subText.textContent = subtextArray[i]
         subText.classList.add("subtext")
-        newIcon.src = "../img/restaurant-pizza-background.jpg"
+        newIcon.src = testImage
         newIcon.classList.add("data-block-img")
 
         newItem.appendChild(newIcon)
