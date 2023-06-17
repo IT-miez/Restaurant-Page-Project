@@ -1,7 +1,8 @@
 
 
 import "./styles.css"
-console.log("CONTACT test.js")
+import locationimage from "../img/map-marker.svg"
+import phoneimage from "../img/phone.svg"
 
 export function createContactPage() {
     console.log("CONTACT test.js")
@@ -19,7 +20,7 @@ export function createContactPage() {
     firstPart.classList.add("sub-part")
     let location_icon = document.createElement("img")
     location_icon.classList.add("icon")
-    location_icon.src ="../img/map-marker.svg"
+    location_icon.src = locationimage
     
     let p1 = document.createElement("p")
     p1.textContent = "testi lokaatio 123 123"
@@ -28,7 +29,7 @@ export function createContactPage() {
     secondPart.classList.add("sub-part")
     let phone_icon = document.createElement("img")
     phone_icon.classList.add("icon")
-    phone_icon.src ="../img/phone.svg"
+    phone_icon.src = phoneimage
 
     let p2 = document.createElement("p")
     p2.textContent = "testi lokaatio 123 123"
