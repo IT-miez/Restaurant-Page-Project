@@ -1,0 +1,167 @@
+
+@font-face {
+    font-family: "customFont";
+    src: url(./Timberline/Timberline/Resistenza\ -\ Timberline\ Regular.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: lightgray;
+}
+
+.headerBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    height: fit-content;
+    padding: 20px;
+}
+
+.main-header {
+    font-family: "customFont";
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+.tabs-header {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.tab {
+    background-color: lightgray;
+    border: 1px solid black;
+    border-bottom: 0;
+    height: 60px;
+    width: 120px;
+    font-family: "customFont";
+    font-size: 28px;
+    padding-bottom: 10px;
+}
+
+.tab.active {
+    background-color: rgb(255, 255, 255);
+}
+
+.tab:hover {
+    background-color: rgba(255, 255, 255, 0.349);
+}
+
+.tab.active:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.background-div {
+    background-image: url("../img/restaurant-pizza-background.jpg");
+    height: 800px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.data-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    width: 1000px;
+}
+
+.data-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    overflow: hidden;
+    text-align: center;
+
+    height: clamp(400px, 50%, 600px);
+    width: clamp(500px, 50%, 800px);
+
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    /*
+    border: 1px solid black;
+    */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.data-block-img {
+    width: 80%;
+    height: auto;
+
+}
+
+.sub-header {
+    font-size: 30px;
+    font-family: "customFont";
+    padding-bottom: 10px;
+    color: white;
+}
+
+.subtext {
+    font-size: 24px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.testi {
+    font-size: 100px;
+}
+
+/* CONTACT PAGE */
+.upper-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    background-color: white;
+    justify-content: center;
+    width: 800px;
+
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+.contact-container .icon {
+    width: 30px;
+}
+
+.sub-part {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
