@@ -10,6 +10,8 @@ module.exports = {
     devtool: 'inline-source-map',
     devServer: {
         static: './dist',
+        port: 8080,
+        open: true,
     },
     module: {
         rules: [
@@ -21,6 +23,7 @@ module.exports = {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
                 type: 'asset/resource',
             },
+            /*
             {
                 test: /\.(png|jpe?g|gif|svg)$/i,
                 use: [
@@ -34,6 +37,7 @@ module.exports = {
                   }
                 ]
             }
+            */
         ],
     },
     
